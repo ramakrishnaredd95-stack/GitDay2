@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Alex Carter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="index.html">Alex Carter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span>☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section-padding page-layout contact-layout">
+      <section class="page-hero">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build something useful together.</h1>
+        <p>Reach out for web development projects, internships, collaborations, or code review opportunities.</p>
+      </section>
+
+      <section class="content-panel contact-info" aria-label="Contact links">
+        <h2>Connect with me</h2>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:alex.carter@example.com">alex.carter@example.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/alexcarter</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/alexcarter</a></li>
+          <li><strong>Resume:</strong> <a href="assets/resume.pdf">Download PDF resume</a></li>
+        </ul>
+      </section>
+
+      <section class="content-panel">
+        <h2>Contact Form</h2>
+        <form class="contact-form" action="mailto:alex.carter@example.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alex Carter.</p></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

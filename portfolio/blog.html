@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Alex Carter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="index.html">Alex Carter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span>☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section-padding page-layout">
+      <section class="page-hero">
+        <p class="eyebrow">Blog</p>
+        <h1>Notes from my learning journey, implementation decisions, and tutorials.</h1>
+      </section>
+
+      <section class="blog-grid" aria-label="Blog posts">
+        <article class="blog-card" id="how-i-built-my-portfolio">
+          <p class="blog-route">/blog/how-i-built-my-portfolio</p>
+          <h2>How I Built My Portfolio</h2>
+          <p>
+            A breakdown of planning the content, designing the visual system, writing semantic HTML,
+            and making the layout responsive with CSS Grid and Flexbox.
+          </p>
+          <a href="#how-i-built-my-portfolio" class="text-link">Read sample post</a>
+        </article>
+        <article class="blog-card" id="ecommerce-project-case-study">
+          <p class="blog-route">/blog/ecommerce-project-case-study</p>
+          <h2>E-Commerce Project Case Study</h2>
+          <p>
+            Lessons from building product filtering, cart state, checkout validation, and a customer-friendly
+            mobile shopping experience.
+          </p>
+          <a href="#ecommerce-project-case-study" class="text-link">Read sample post</a>
+        </article>
+        <article class="blog-card" id="frontend-development-process">
+          <p class="blog-route">/blog/frontend-development-process</p>
+          <h2>Frontend Development Process</h2>
+          <p>
+            My repeatable workflow for converting requirements into wireframes, components, styles,
+            tests, deployment steps, and documentation.
+          </p>
+          <a href="#frontend-development-process" class="text-link">Read sample post</a>
+        </article>
+        <article class="blog-card" id="project-planning-guide">
+          <p class="blog-route">/blog/project-planning-guide</p>
+          <h2>Project Planning Guide</h2>
+          <p>
+            A beginner-friendly tutorial covering scope definition, milestones, risk planning, technology
+            choices, and post-launch improvement notes.
+          </p>
+          <a href="#project-planning-guide" class="text-link">Read sample post</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alex Carter.</p></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
