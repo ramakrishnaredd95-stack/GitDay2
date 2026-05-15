@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Alex Carter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="index.html">Alex Carter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span>☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section-padding page-layout">
+      <section class="page-hero">
+        <p class="eyebrow">Projects</p>
+        <h1>Case studies with problem statements, process, features, and solutions.</h1>
+      </section>
+
+      <section class="project-grid" aria-label="Portfolio projects">
+        <article class="project-card">
+          <h2>E-Commerce Storefront</h2>
+          <p class="project-summary">A responsive shopping experience with product filtering, cart management, and checkout flow.</p>
+          <dl class="project-details">
+            <dt>Problem statement</dt>
+            <dd>Small businesses need an affordable storefront that helps customers browse products quickly on mobile and desktop.</dd>
+            <dt>Technologies used</dt>
+            <dd>HTML, CSS, JavaScript, React, Node.js, Stripe test flow, MongoDB.</dd>
+            <dt>My role</dt>
+            <dd>Designed the interface, built reusable product components, implemented cart logic, and documented setup steps.</dd>
+            <dt>Implementation process</dt>
+            <dd>Defined user stories, sketched wireframes, created component architecture, integrated product data, and tested checkout paths.</dd>
+            <dt>Features</dt>
+            <dd>Search, category filters, product cards, cart totals, responsive layout, and accessible form labels.</dd>
+            <dt>Challenges faced</dt>
+            <dd>Keeping cart state consistent after quantity updates and page refreshes.</dd>
+            <dt>Solution implemented</dt>
+            <dd>Centralized cart state and persisted key values in local storage with validation before checkout.</dd>
+          </dl>
+          <div class="project-links"><a href="#" aria-label="E-Commerce GitHub repository">GitHub</a><a href="#" aria-label="E-Commerce live demo">Demo</a></div>
+        </article>
+
+        <article class="project-card">
+          <h2>Task Management Dashboard</h2>
+          <p class="project-summary">A productivity dashboard for tracking tasks, deadlines, priorities, and completion status.</p>
+          <dl class="project-details">
+            <dt>Problem statement</dt>
+            <dd>Students and small teams need a clear task board that reduces planning confusion and missed deadlines.</dd>
+            <dt>Technologies used</dt>
+            <dd>React, CSS Grid, Node.js, Express, PostgreSQL, REST APIs.</dd>
+            <dt>My role</dt>
+            <dd>Built the front-end dashboard, API routes, database schema, and status update interactions.</dd>
+            <dt>Implementation process</dt>
+            <dd>Mapped task statuses, designed cards, created CRUD endpoints, and tested status transitions.</dd>
+            <dt>Features</dt>
+            <dd>Task creation, priority labels, due dates, kanban columns, progress summaries, and search.</dd>
+            <dt>Challenges faced</dt>
+            <dd>Designing a layout that stayed usable on small screens.</dd>
+            <dt>Solution implemented</dt>
+            <dd>Used responsive columns that collapse into stacked sections with touch-friendly controls.</dd>
+          </dl>
+          <div class="project-links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+        </article>
+
+        <article class="project-card">
+          <h2>Learning Resource Hub</h2>
+          <p class="project-summary">A searchable resource library for tutorials, notes, and technical references.</p>
+          <dl class="project-details">
+            <dt>Problem statement</dt>
+            <dd>Learners often lose track of useful tutorials and need a structured way to organize references.</dd>
+            <dt>Technologies used</dt>
+            <dd>HTML, CSS, JavaScript, Python, Flask, SQLite.</dd>
+            <dt>My role</dt>
+            <dd>Planned the data model, developed the interface, and implemented filtering and resource tagging.</dd>
+            <dt>Implementation process</dt>
+            <dd>Researched user needs, created wireframes, built database tables, added filters, and wrote deployment notes.</dd>
+            <dt>Features</dt>
+            <dd>Tag filters, keyword search, saved notes, difficulty levels, and curated learning paths.</dd>
+            <dt>Challenges faced</dt>
+            <dd>Making search results relevant without overcomplicating the application.</dd>
+            <dt>Solution implemented</dt>
+            <dd>Combined normalized tags with keyword matching and clear empty-state suggestions.</dd>
+          </dl>
+          <div class="project-links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+        </article>
+      </section>
+
+      <section class="content-panel process" id="preparation">
+        <p class="eyebrow">Preparation Process</p>
+        <h2>How I prepare before starting a project</h2>
+        <ol class="process-list">
+          <li><strong>Requirement analysis:</strong> clarify goals, users, success metrics, constraints, and must-have features.</li>
+          <li><strong>Research and references:</strong> review competitors, design patterns, accessibility guidance, and technical examples.</li>
+          <li><strong>Wireframing/design planning:</strong> sketch layouts, user flows, information architecture, and responsive breakpoints.</li>
+          <li><strong>Technology selection:</strong> choose frameworks, libraries, databases, hosting, and testing tools that fit the scope.</li>
+          <li><strong>Development:</strong> build iteratively with semantic structure, reusable components, clean styles, and version control.</li>
+          <li><strong>Testing:</strong> verify functionality, responsiveness, accessibility basics, forms, and edge cases.</li>
+          <li><strong>Deployment:</strong> configure hosting, environment variables, build settings, and production checks.</li>
+          <li><strong>Documentation:</strong> write setup instructions, feature notes, known limitations, and future improvements.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alex Carter.</p></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

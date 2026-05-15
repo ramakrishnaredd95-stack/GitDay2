@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alex Carter, a web developer building clean, responsive, and user-friendly digital products."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="index.html">Alex Carter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-padding">
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio Website</p>
+          <h1>Hi, I’m Alex Carter, a front-end web developer.</h1>
+          <p class="hero-text">
+            I am passionate about building clean, responsive, and user-friendly digital products
+            that solve real problems and create delightful online experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="projects.html">View Projects</a>
+            <a class="btn secondary" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Professional summary">
+          <div class="avatar">AC</div>
+          <h2>Web Developer</h2>
+          <p>HTML • CSS • JavaScript • React • Node.js • Python</p>
+          <a href="assets/resume.pdf" class="text-link">Download Resume</a>
+        </div>
+      </section>
+
+      <section class="section-padding intro-grid">
+        <article class="highlight-card">
+          <h2>About Me</h2>
+          <p>
+            I combine design thinking, practical engineering, and continuous learning to create
+            accessible websites and applications that perform well across devices.
+          </p>
+          <a href="about.html" class="text-link">Learn more about my background</a>
+        </article>
+        <article class="highlight-card">
+          <h2>Featured Work</h2>
+          <p>
+            Explore case studies covering e-commerce, task management, and learning platforms,
+            including implementation process, challenges, and solutions.
+          </p>
+          <a href="projects.html" class="text-link">Explore project case studies</a>
+        </article>
+        <article class="highlight-card">
+          <h2>Preparation Process</h2>
+          <p>
+            My process starts with requirements, research, wireframes, technology selection,
+            development, testing, deployment, and documentation.
+          </p>
+          <a href="projects.html#preparation" class="text-link">See how I prepare</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alex Carter. Built with semantic HTML, CSS, and JavaScript.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
